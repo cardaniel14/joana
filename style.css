@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5vmax;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  margin-left: 100px;
+  font-size: 50px;
+  color: rgb(231, 131, 43);
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+}
+
+nav ul li {
+  color: #000;
+  display: inline;
+  margin-right: 50px;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li a:hover {
+  color: rgb(231, 131, 43);
+  text-decoration: underline;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.image-container img {
+  height: 800px;
+  width: 45%;
+  margin: 0 10px;
+  border-radius: 20px;
+
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.center {
+  /* Aqui controlo el tamaño del div */
+  padding: 150px;
+}
+
+.center h3 {
+  text-align: center;
+  font-size: 35px;
+  font-family: poppins;
+}
+
+.title {
+  text-align: center;
+  font-size: 40px;
+  color: rgb(231, 131, 43);
+}
+
+.containerAbout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: solid; */
+  gap: 50px;
+}
+
+.containerAbout .textAbout {
+  font-size: 22px;
+  text-align: left;
+  max-width: 40%;
+  margin-bottom: 20px;
+  font-family: lato;
+  /* width: 400px; */
+  /* height: 400px; */
+}
+
+.fotoJoana {
+  border-radius: 20px;
+  max-width: 40%;
+  height: 600px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.secondDivAbout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 50px;
+}
+
+.secondDivAbout .secondtextAbout {
+  font-size: 22px;
+  text-align: right;
+  max-width: 40%;
+  height: 50vh;
+  margin: 40px;
+  line-height: 1.2;
+  /* letter-spacing: 5px; */
+  font-family: lato;
+  /* border: solid; */
+  /* width: 400px; */
+  /* height: 400px; */
+}
+
+.fotoFlowers {
+  border-radius: 20px;
+  width: 500px;
+  height: 600px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-images {
+  margin-top: 20px;
+  overflow: hidden;
+}
+.portfolio-images img {
+  width: calc(
+    33.33% - 10px
+  ); /* 33.33% width for each image with a bit of margin */
+  margin: 5px; /* Margin between images */
+  float: left; /* Float the images left */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+  border-radius: 20px;
+  height: 600px;
+  transition: opacity 0.1s ease-in-out;
+
+  object-fit: cover;
+}
+
+.portfolio-images img:hover {
+  opacity: 0.5;
+}
+.portfolio-images img:nth-child(3n + 1) {
+  clear: both;
+}
